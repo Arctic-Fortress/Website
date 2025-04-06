@@ -28,11 +28,20 @@
   
   /* Hero with Parallax using local image */
   .hero-section {
-    height: 100vh;
+    min-height: 100vh; /* full screen height */
     background: url('background.webp') no-repeat center center fixed;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-  }  
+    padding: 0;
+    margin: 0;
+  }
+  
   
   /* Glassmorphism card */
   .glass-card {
@@ -49,7 +58,7 @@
   }
   
   .wave-divider {
-    height: 120px;
+    height: 60px;
     overflow: hidden;
     margin-bottom: -1px;
   }
