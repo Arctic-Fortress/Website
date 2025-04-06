@@ -61,7 +61,9 @@
   .wave-divider {
     height: 120px;
     overflow: hidden;
-    margin-bottom: -1px; /* closes the gap */
+    margin-bottom: -1px;
+    background: transparent;
   }
+  
   
   
