@@ -29,10 +29,10 @@
   /* Hero with Parallax using local image */
   .hero-section {
     height: 100vh;
-    background: url('../background.webp') no-repeat center center fixed;
+    background: url('background.webp') no-repeat center center fixed;
     background-size: cover;
     position: relative;
-  }
+  }  
   
   /* Glassmorphism card */
   .glass-card {
