@@ -10,6 +10,8 @@
     background-color: var(--light-grey);
     color: var(--deep-blue);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
   }
   
   .navbar, footer {
@@ -58,8 +60,9 @@
   }
   
   .wave-divider {
-    height: 60px;
+    height: 120px;
     overflow: hidden;
-    margin-bottom: -1px;
+    margin-bottom: -1px; /* closes the gap */
   }
+  
   
