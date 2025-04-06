@@ -7,38 +7,55 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css"/>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-    <body class="d-flex flex-column min-vh-100">
+  <div id="navbar-container"></div>
 
-        <div id="navbar-container"></div>
-      
-        <main class="flex-grow-1">
-
-
-  <!-- Hero Section with Parallax -->
+  <!-- Hero Section -->
   <section class="hero-section d-flex align-items-center justify-content-center text-white text-center">
-    <div class="glass-card p-5 rounded shadow">
+    <div class="glass-card p-5 rounded shadow-lg">
       <h1 class="display-4 fw-bold">Artic Fortress</h1>
-      <p class="lead">Modern web design with strong foundations.</p>
+      <p class="lead mb-0">Modern, minimal, and beautifully built websites for strong digital foundations.</p>
     </div>
   </section>
 
-  <!-- Intro Section -->
-  <section class="container my-5">
-    <div class="row justify-content-center text-center">
-      <div class="col-lg-8">
-        <h2 class="mb-4">Your Digital Stronghold</h2>
-        <p class="fs-5">We create beautiful, functional, and fast-loading websites designed to give your business the professional edge it deserves. Whether you're just getting started or looking to refresh your brand, Artic Fortress delivers tailored results with a clean, modern user experience.</p>
+  <!-- Intro / About Strip -->
+  <main class="flex-grow-1">
+    <section class="container text-center my-5">
+      <h2 class="mb-4">Built for Businesses That Want More</h2>
+      <p class="fs-5">We design and deliver fully responsive, clean, and custom-coded websites with purpose. Whether you're just starting out or rebuilding your brand, our tailored approach gives you everything you need to make a professional impact online.</p>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <h3 class="text-center mb-5">Why Choose Artic Fortress?</h3>
+        <div class="row text-center g-4">
+          <div class="col-md-4">
+            <div class="p-4 border rounded h-100 shadow-sm">
+              <h5 class="mb-3">Sleek & Minimal</h5>
+              <p class="text-muted">We don’t overload your users. Our design language is crisp, lightweight, and modern — no clutter.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 border rounded h-100 shadow-sm">
+              <h5 class="mb-3">Responsive & Fast</h5>
+              <p class="text-muted">Every site is optimized for speed and works perfectly on mobile, tablet, and desktop.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 border rounded h-100 shadow-sm">
+              <h5 class="mb-3">Tailored to You</h5>
+              <p class="text-muted">We custom-build every site with your business goals in mind. No templates. No copy-paste.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-
+    </section>
   </main>
 
   <div id="footer-container"></div>
 
-  <!-- Scripts -->
   <script src="js/include.js"></script>
   <script>
     loadPartial("navbar-container", "navbar.html");
