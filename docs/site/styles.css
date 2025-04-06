@@ -1,0 +1,44 @@
+:root {
+    --artic-blue: #4ac6e7;
+    --fortress-grey: #2e2e2e;
+    --deep-blue: #1b2a41;
+    --light-grey: #f2f2f2;
+    --white: #ffffff;
+  }
+  
+  body {
+    background-color: var(--light-grey);
+    color: var(--deep-blue);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .navbar, footer {
+    background-color: var(--fortress-grey) !important;
+  }
+  
+  .nav-link {
+    color: var(--white) !important;
+  }
+  .nav-link:hover {
+    color: var(--artic-blue) !important;
+  }
+  .navbar-brand {
+    color: var(--artic-blue) !important;
+  }
+  
+  /* Hero with Parallax */
+  .hero-section {
+    height: 100vh;
+    background: url("https://placehold.co/600x400?text=Artic+Fortress+Hero") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Glass card styling */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    color: var(--white);
+  }
+  
