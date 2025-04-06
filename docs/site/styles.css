@@ -26,19 +26,25 @@
     color: var(--artic-blue) !important;
   }
   
-  /* Hero with Parallax */
+  /* Hero with Parallax using local image */
   .hero-section {
     height: 100vh;
-    background: url("https://placehold.co/600x400?text=Artic+Fortress+Hero") no-repeat center center fixed;
+    background: url('../background.webp') no-repeat center center fixed;
     background-size: cover;
     position: relative;
   }
   
-  /* Glass card styling */
+  /* Glassmorphism card */
   .glass-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
     color: var(--white);
+  }
+  
+  /* Prevent content overlap */
+  main {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   
