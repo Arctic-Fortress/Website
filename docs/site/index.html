@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Artic Fortress – Home</title>
+  <title>Arctic Fortress – Home</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body class="d-flex flex-column min-vh-100">
 
   <div id="navbar-container"></div>
-  <!-- wave goes here, outside nav -->
-  <div class="wave-divider">
-    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" style="width: 100%; height: 100%;">
-      <path d="M0,0 C480,120 960,0 1440,120 L1440,0 L0,0 Z" fill="rgba(46,46,46,0.95)"></path>
-    </svg>
-  </div>
-  
-
-  <!-- Hero Section -->
   <section class="hero-section d-flex align-items-center justify-content-center text-white text-center">
-    <div class="glass-card p-5 rounded shadow-lg">
-      <h1 class="display-4 fw-bold">Artic Fortress</h1>
+
+    <!-- Wave lives INSIDE the hero -->
+    <div class="wave-divider-top">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,0 C480,120 960,0 1440,120 L1440,0 L0,0 Z" fill="var(--fortress-grey)"></path>
+      </svg>
+    </div>
+  
+    <div class="glass-card p-5 rounded shadow-lg z-1 position-relative">
+      <h1 class="display-4 fw-bold">Arctic Fortress</h1>
       <p class="lead mb-0">Modern, minimal, and beautifully built websites for strong digital foundations.</p>
     </div>
   </section>
+  
 
   <!-- Intro / About Strip -->
   <main class="flex-grow-1">
@@ -36,7 +36,7 @@
     <!-- Why Choose Us -->
     <section class="bg-light py-5">
       <div class="container">
-        <h3 class="text-center mb-5">Why Choose Artic Fortress?</h3>
+        <h3 class="text-center mb-5">Why Choose Arctic Fortress?</h3>
         <div class="row text-center g-4">
           <div class="col-md-4">
             <div class="p-4 border rounded h-100 shadow-sm">
