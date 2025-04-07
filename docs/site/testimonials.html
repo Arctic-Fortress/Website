@@ -103,15 +103,23 @@
   
 </head>
 <body class="d-flex flex-column min-vh-100">
-  <!-- Navbar -->
+      
   <div id="navbar-container"></div>
-  
+
+  <main class="flex-grow-1">
+    <div class="wave-divider-top-about">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,0 C480,120 960,0 1440,120 L1440,0 L0,0 Z" fill="var(--fortress-grey)"></path>
+      </svg>
+    </div>
+
   <!-- Main Content -->
   <div class="container py-5">
     <h2 class="mb-5 text-center">Testimonials</h2>
     <div id="timeline" class="timeline"></div>
   </div>
-  
+
+</main>
   <!-- Footer -->
   <div id="footer-container"></div>
   
@@ -139,14 +147,14 @@
       testimonials.forEach((item, index) => {
         const timelineItem = document.createElement('div');
         timelineItem.className = 'timeline-item ' + (index % 2 === 0 ? 'right' : 'left');
-              
+
         const dot = document.createElement('div');
         dot.className = 'timeline-dot';
-              
+
         const contentDiv = document.createElement('div');
         contentDiv.className = 'timeline-content';
         contentDiv.innerHTML = `<h4>${item.name}</h4><p>${item.testimonial}</p>`;
-              
+
         timelineItem.appendChild(dot);       // append dot first
         timelineItem.appendChild(contentDiv);
         timeline.appendChild(timelineItem);
@@ -154,5 +162,39 @@
       });
     });
   </script>
+  <!-- Floating Contact Button -->
+<button id="contactBubble" class="btn btn-primary rounded-circle shadow-lg position-fixed" style="bottom: 1.5rem; right: 1.5rem; z-index: 1050;" data-bs-toggle="modal" data-bs-target="#contactModal">
+  💬
+</button>
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
