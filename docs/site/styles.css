@@ -178,4 +178,12 @@ html {
   margin-top: -1px; /* Avoids visible seam */
 }
 
+.navbar-brand {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
 
+.navbar .nav-link {
+  font-size: 1.1rem; /* Adjust as needed */
+  font-weight: 500;
+}
